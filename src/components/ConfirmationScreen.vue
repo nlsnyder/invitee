@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full m-auto rounded shadow-2xl">
-    <div class="flex flex-col items-center justify-center gap-2 text-green-600 p-6">
+  <div class="w-full m-auto rounded shadow-2xl bg-slate-800">
+    <div class="flex flex-col items-center justify-center gap-2 text-green-500 p-6">
       <font-awesome-icon class="text-5xl" :icon="['fas', 'circle-check']" />
       <h3>Accepted</h3>
     </div>
-    <div class="border-t border-solid border-slate-300 px-[10%] py-6">
+    <div class="border-t border-solid border-slate-300 px-[10%] py-6 text-slate-300">
       <div class="flex flex-col items-between justify-center gap-8">
         <h5 class="font-semibold text-center">Event</h5>
         <div class="info-section">

@@ -7,7 +7,7 @@
           class="open-envelope bg-slate-200 shadow-lg text-slate-900 hover:bg-slate-900 hover:text-slate-100 transition-colors border-2 border-slate-900"
           @click="openEnvelope">Open</button>
       </div>
-      <div v-else-if="state.acceptClicked" class="w-4/5 md:w-1/3 lg:w-1/4 -translate-y-20">
+      <div v-else-if="state.acceptClicked" class="w-4/5 md:w-2/5 lg:w-1/3 -translate-y-20">
         <ConfirmationScreen />
       </div>
       <div v-else-if="state.declineClicked" class="decline-invitation">
