@@ -9,14 +9,20 @@ import { type DefaultConfigOptions, defaultConfig, plugin } from '@formkit/vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import {
+    faCheck,
+    faCheckCircle,
+    faCircleExclamation,
+    faXmark,
+} from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faClock } from '@fortawesome/free-regular-svg-icons';
 
 const config: DefaultConfigOptions = {
     locales: { fr },
     locale: 'fr',
 };
 
-library.add(faCircleExclamation);
+library.add(faCircleExclamation, faCheck, faXmark, faCheckCircle, faCalendar, faClock);
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

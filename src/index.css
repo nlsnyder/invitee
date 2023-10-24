@@ -69,7 +69,7 @@ h6 {
 
 @layer components {
     .validate-form {
-        @apply h-4/5 w-3/5 sm:w-1/4 m-auto flex flex-col items-center justify-center gap-4;
+        @apply h-4/5 w-3/5 sm:w-1/4 m-auto flex flex-col items-center justify-center gap-4 text-neutral-100;
     }
 
     .form-label-lg {
@@ -77,7 +77,7 @@ h6 {
     }
 
     .form-input {
-        @apply mt-4 w-full text-lg p-2 border-solid border rounded border-black focus-within:ring-2 focus-within:ring-offset-0 focus-within:outline-none focus-within:border-teal-500 focus-within:ring-teal-500;
+        @apply mt-4 w-full text-lg p-2 border-solid border bg-white rounded border-black focus-within:ring-2 focus-within:ring-offset-0 focus-within:outline-none focus-within:border-slate-400 focus-within:ring-slate-400 text-slate-800;
     }
 
     .error-container {
@@ -94,5 +94,33 @@ h6 {
 
     .error-icon {
         @apply text-red-700 bg-transparent text-xl py-1;
+    }
+
+    .overlay {
+        @apply absolute inset-0 bg-slate-900;
+    }
+
+    .modal {
+        @apply text-center absolute w-[350px] left-1/2 -translate-x-1/2 md:w-[400px] lg:w-[450px] top-[10%] lg:top-[5%] border border-solid rounded bg-white text-base z-[999] flex flex-col shadow-lg;
+    }
+
+    .modal-header {
+        @apply px-4 py-4 border-solid border-b;
+    }
+
+    .modal-body {
+        @apply flex-auto italic pt-[8rem] md:pt-[10rem] lg:pt-[11rem] pb-20 px-16 h-[350px] md:h-[400px] lg:h-[450px];
+    }
+
+    .modal-footer {
+        @apply border-t border-solid p-4 flex justify-between;
+    }
+
+    .accept-btn {
+        @apply hover:bg-green-100 transition-colors border-solid border-2 rounded p-2 border-green-600 font-bold text-green-600;
+    }
+
+    .decline-btn {
+        @apply hover:bg-red-100 transition-colors border-solid border-2 rounded p-2 border-red-600 font-bold text-red-600;
     }
 }

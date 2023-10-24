@@ -1,7 +1,7 @@
 <template>
   <div class="validate-form">
     <FormKit type="form" form-class="form-width" submit-label="Submit" :submit-attrs="{
-      inputClass: 'text-base border border-gray-800 p-2 rounded font-semibold transition hover:bg-black hover:text-white',
+      inputClass: 'text-base border border-slate-200 p-2 rounded font-semibold transition hover:bg-slate-700 hover:text-white',
       wrapperClass: 'mt-4',
     }" :messages-class="{
   hidden: true,
@@ -12,7 +12,7 @@
           required: 'Code is required.',
           number: 'Code must be a number.',
           length: 'Code must be 4 digits.'
-        }" @focus="clearError" />
+        }" @focus="clearError" @input="clearError" />
     </FormKit>
     <div class="error-container">
       <div class="error-wrapper" v-if="state.formIsInvalid">
@@ -44,7 +44,6 @@ const validatePin = (pin: any) => {
 };
 
 const clearError = () => {
-  console.log('Input is focused on');
   state.formIsInvalid = false;
 };
 </script>
