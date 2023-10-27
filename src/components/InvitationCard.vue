@@ -11,7 +11,7 @@
         <ConfirmationScreen />
       </div>
       <div v-else-if="state.declineClicked" class="decline-invitation">
-        <h1>You weren't supposed to click that :(</h1>
+        <h1 class="text-center">You weren't supposed to click that :(</h1>
       </div>
     </Transition>
   </div>

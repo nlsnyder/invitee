@@ -1,126 +1,138 @@
-@import './assets/main.css';
+@import "./assets/main.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --base-font-size: 10px;
-    --h1-scale: 5.6;
-    --h1-letter-spacing: -0.48px;
-    --h2-scale: 4.2;
-    --h2-letter-spacing: -0.36px;
-    --h3-scale: 3.4;
-    --h3-letter-spacing: -0.28px;
-    --h4-scale: 2.8;
-    --h4-letter-spacing: -0.24px;
-    --h5-scale: 2.2;
-    --h5-letter-spacing: -0.2px;
-    --h6-scale: 1.6;
-    --h6-letter-spacing: -0.16px;
-    --line-height-multiplier: 1.35;
-    --header-letter-spacing: -0.01rem;
+  --base-font-size: 10px;
+  --h1-scale: 5.6;
+  --h1-letter-spacing: -0.48px;
+  --h2-scale: 4.2;
+  --h2-letter-spacing: -0.36px;
+  --h3-scale: 3.4;
+  --h3-letter-spacing: -0.28px;
+  --h4-scale: 2.8;
+  --h4-letter-spacing: -0.24px;
+  --h5-scale: 2.2;
+  --h5-letter-spacing: -0.2px;
+  --h6-scale: 1.6;
+  --h6-letter-spacing: -0.16px;
+  --line-height-multiplier: 1.35;
+  --header-letter-spacing: -0.01rem;
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    background-color: #fff;
-    color: #28333e;
-    overflow-x: hidden;
-    overflow-y: auto;
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: #fff;
+  color: #28333e;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: calc(var(--base-font-size) * var(--h1-scale));
-    line-height: calc(var(--base-font-size) * var(--h1-scale) * var(--line-height-multiplier));
-    letter-spacing: var(--h1-letter-spacing);
+  font-weight: 700;
+  font-size: calc(var(--base-font-size) * var(--h1-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h1-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h1-letter-spacing);
 }
 h2 {
-    font-weight: 700;
-    font-size: calc(var(--base-font-size) * var(--h2-scale));
-    line-height: calc(var(--base-font-size) * var(--h2-scale) * var(--line-height-multiplier));
-    letter-spacing: var(--h2-letter-spacing);
+  font-weight: 700;
+  font-size: calc(var(--base-font-size) * var(--h2-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h2-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h2-letter-spacing);
 }
 h3 {
-    font-weight: 700;
-    font-size: calc(var(--base-font-size) * var(--h3-scale));
-    line-height: calc(var(--base-font-size) * var(--h3-scale) * var(--line-height-multiplier));
-    letter-spacing: var(--h3-letter-spacing);
+  font-weight: 700;
+  font-size: calc(var(--base-font-size) * var(--h3-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h3-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h3-letter-spacing);
 }
 h4 {
-    font-size: calc(var(--base-font-size) * var(--h4-scale));
-    line-height: calc(var(--base-font-size) * var(--h4-scale) * var(--line-height-multiplier));
-    letter-spacing: var(--h4-letter-spacing);
+  font-size: calc(var(--base-font-size) * var(--h4-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h4-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h4-letter-spacing);
 }
 h5 {
-    font-size: calc(var(--base-font-size) * var(--h5-scale));
-    line-height: calc(var(--base-font-size) * var(--h5-scale) * var(--line-height-multiplier));
-    letter-spacing: var(--h5-letter-spacing);
+  font-size: calc(var(--base-font-size) * var(--h5-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h5-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h5-letter-spacing);
 }
 h6 {
-    font-size: calc(var(--base-font-size) * var(--h6-scale));
-    line-height: calc(var(--base-font-size) * var(--h6-scale) * var(--line-height-multiplier));
-    letter-spacing: var(--h6-letter-spacing);
+  font-size: calc(var(--base-font-size) * var(--h6-scale));
+  line-height: calc(
+    var(--base-font-size) * var(--h6-scale) * var(--line-height-multiplier)
+  );
+  letter-spacing: var(--h6-letter-spacing);
 }
 
 @layer components {
-    .validate-form {
-        @apply h-4/5 w-3/5 sm:w-1/4 m-auto flex flex-col items-center justify-center gap-4 text-neutral-100;
-    }
+  .validate-form {
+    @apply h-4/5 w-3/5 sm:w-1/4 m-auto flex flex-col items-center justify-center gap-4 text-neutral-100;
+  }
 
-    .form-label-lg {
-        @apply text-3xl;
-    }
+  .form-label-lg {
+    @apply text-3xl;
+  }
 
-    .form-input {
-        @apply mt-4 w-full text-lg p-2 border-solid border bg-white rounded border-black focus-within:ring-2 focus-within:ring-offset-0 focus-within:outline-none focus-within:border-slate-400 focus-within:ring-slate-400 text-slate-800;
-    }
+  .form-input {
+    @apply mt-4 w-full text-lg p-2 border-solid border bg-white rounded border-black focus-within:ring-2 focus-within:ring-offset-0 focus-within:outline-none focus-within:border-slate-400 focus-within:ring-slate-400 text-slate-800;
+  }
 
-    .error-container {
-        @apply text-base;
-    }
+  .error-container {
+    @apply text-base;
+  }
 
-    .error-wrapper {
-        @apply mt-2 p-2 bg-red-50 border-red-900 border rounded border-solid flex flex-col md:flex-row gap-2 md:items-start items-center;
-    }
+  .error-wrapper {
+    @apply mt-2 py-2 px-4 bg-red-50 border-red-900 border rounded border-solid flex flex-col md:flex-row gap-2 md:items-start items-center;
+  }
 
-    .error-message {
-        @apply text-slate-900 text-base text-center md:text-left;
-    }
+  .error-message {
+    @apply text-slate-900 text-base text-center md:text-left;
+  }
 
-    .error-icon {
-        @apply text-red-700 bg-transparent text-xl py-1;
-    }
+  .error-icon {
+    @apply text-red-700 bg-transparent text-xl py-1;
+  }
 
-    .overlay {
-        @apply absolute inset-0 bg-slate-900;
-    }
+  .overlay {
+    @apply absolute inset-0 bg-slate-900;
+  }
 
-    .modal {
-        @apply text-center absolute w-[350px] left-1/2 -translate-x-1/2 md:w-[400px] lg:w-[450px] top-[10%] lg:top-[5%] border border-solid rounded bg-white text-base z-[999] flex flex-col shadow-lg;
-    }
+  .modal {
+    @apply text-center absolute w-[350px] left-1/2 -translate-x-1/2 md:w-[400px] lg:w-[450px] top-[10%] lg:top-[5%] border border-solid rounded bg-white text-base z-[999] flex flex-col shadow-lg;
+  }
 
-    .modal-header {
-        @apply px-4 py-4 border-solid border-b;
-    }
+  .modal-header {
+    @apply px-4 py-4 border-solid border-b;
+  }
 
-    .modal-body {
-        @apply flex-auto italic pt-[8rem] md:pt-[10rem] lg:pt-[11rem] pb-20 px-16 h-[350px] md:h-[400px] lg:h-[450px];
-    }
+  .modal-body {
+    @apply flex-auto p-8 h-[400px] lg:h-[450px] overflow-y-scroll;
+  }
 
-    .modal-footer {
-        @apply border-t border-solid p-4 flex justify-between;
-    }
+  .modal-footer {
+    @apply z-10 bg-white border-t border-solid p-4 flex justify-between;
+  }
 
-    .accept-btn {
-        @apply hover:bg-green-100 transition-colors border-solid border-2 rounded p-2 border-green-600 font-bold text-green-600;
-    }
+  .accept-btn {
+    @apply hover:bg-green-100 transition-colors border-solid border-2 rounded p-2 border-green-600 font-bold text-green-600;
+  }
 
-    .decline-btn {
-        @apply hover:bg-red-100 transition-colors border-solid border-2 rounded p-2 border-red-600 font-bold text-red-600;
-    }
+  .decline-btn {
+    @apply hover:bg-red-100 transition-colors border-solid border-2 rounded p-2 border-red-600 font-bold text-red-600;
+  }
 }

@@ -7,10 +7,8 @@
           <div class="modal-header">
             <slot name="modal-header"></slot>
           </div>
-          <div class="modal-body-background bg-cover bg-no-repeat">
-            <div class="modal-body">
-              <slot></slot>
-            </div>
+          <div class="modal-body">
+            <slot></slot>
           </div>
           <div class="modal-footer">
             <slot name="modal-footer"></slot>
@@ -30,10 +28,6 @@ const props = defineProps<{
 </script>
 
 <style scoped>
-.modal-body-background {
-  background-image: url('/invitation-background.jpeg');
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;

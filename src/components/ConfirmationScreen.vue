@@ -11,20 +11,20 @@
           <span class="detail-tag">Date:</span>
           <div class="date-card">
             <font-awesome-icon :icon="['far', 'calendar']" />
-            <span>10-23-2023</span>
+            <span>11-[16,17,18]-2023</span>
           </div>
         </div>
         <div class="info-section">
           <span class="detail-tag">Time:</span>
           <div class="time-card">
             <font-awesome-icon :icon="['far', 'clock']" />
-            <span>5:30 PM</span>
+            <span>7:30 PM</span>
           </div>
         </div>
         <div class="info-section">
           <span class="detail-tag">Details:</span>
           <p class="italic text-base">
-            A long walk on the beach
+            Joel Kim Booster at Comedy on State
           </p>
         </div>
       </div>

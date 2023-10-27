@@ -1,7 +1,7 @@
 <template>
-  <ValidatePin />
+  <VerificationCode />
 </template>
 
 <script setup lang="ts">
-import ValidatePin from "@/components/ValidatePin.vue"
+import VerificationCode from "@/components/VerificationCode.vue";
 </script>
