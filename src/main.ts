@@ -1,6 +1,7 @@
 import "./index.css";
 
 import { createApp } from "vue";
+import { initializeApp } from "firebase/app";
 import App from "./App.vue";
 import router from "./router";
 import { fr } from "@formkit/i18n";
@@ -18,6 +19,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar, faClock } from "@fortawesome/free-regular-svg-icons";
+import { firebaseConfig } from "../firebase.config";
 
 const config: DefaultConfigOptions = {
   locales: { fr },
@@ -34,6 +36,8 @@ library.add(
   faDeleteLeft,
   faCaretRight
 );
+
+initializeApp(firebaseConfig);
 
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
