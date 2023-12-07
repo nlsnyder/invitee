@@ -1,26 +1,27 @@
 <template>
-  <div class="h-screen text-white flex items-center justify-center flex-col -translate-y-4">
+  <div class="h-screen text-white flex items-center justify-center flex-col">
     <h3 class="text-slate-300 mb-3">Enter Code</h3>
     <div class="mb-8">
-      <input v-for="i in 4" class="verification-code-square text-slate-900" :key="i" v-model="keyCode[i - 1]"
+      <input v-for="i in 4" class="verification-code-square text-slate-900 text-2xl" :key="i" v-model="keyCode[i - 1]"
         @input="onCodeInput(i - 1)" @keydown="onInputKeyDown(i - 1, $event)" maxlength="1" />
     </div>
-    <div class="w-60">
-      <div class="grid grid-rows-3 grid-cols-3 gap-3">
-        <button v-for="num in 9" class="text-slate-300 text-xl flex items-center justify-center" :key="num"
+    <div class="w-[20rem]">
+      <div class="grid grid-rows-3 grid-cols-3 gap-y-4">
+        <button v-for="num in 9" class="text-slate-300 text-[2rem] flex items-center justify-center" :key="num"
           @click="onKeypadClick(num)"><span
-            class="w-16 h-16 border  border-slate-300 rounded-full hover:bg-slate-300 hover:text-slate-900 transition-colors flex items-center justify-center font-semibold">{{
+            class="w-20 h-20 border  border-slate-300 rounded-full hover:bg-slate-300 hover:text-slate-900 transition-colors flex items-center justify-center font-semibold">{{
               num }}</span></button>
       </div>
-      <div class="mt-3 grid grid-rows-1 grid-cols-3 gap-3">
-        <button class="col-start-2 text-xl flex items-center justify-center" @click="onKeypadClick(0)"><span
-            class="w-16 h-16 border  border-slate-300 rounded-full hover:bg-slate-300 hover:text-slate-900 transition-colors flex items-center justify-center font-semibold">0</span></button>
-        <button @click="deleteNumber" class="w-16 h-16"><font-awesome-icon class="h-8 w-8 hover:text-slate-500"
+      <div class="mt-3 grid grid-rows-1 grid-cols-3 gap-[0.75rem]">
+        <button class="col-start-2 text-[2rem] flex items-center justify-center text-slate-300"
+          @click="onKeypadClick(0)"><span
+            class="w-20 h-20 border  border-slate-300 rounded-full hover:bg-slate-300 hover:text-slate-900 transition-colors flex items-center justify-center font-semibold">0</span></button>
+        <button @click="deleteNumber" class="w-20 h-20"><font-awesome-icon class="h-8 w-8 hover:text-slate-500"
             :icon="['fas', 'delete-left']" /></button>
       </div>
       <div class="mt-4 flex flex-col gap-3 items-center justify-center w-full">
         <button @click="verifyCode" :disabled="!isCodeFull" type="submit"
-          class="font-semibold bg-slate-600 text-slate-200 text-xl py-2 px-4 rounded hover:bg-slate-300 hover:text-slate-800 transition-colors disabled:bg-slate-800 disabled:text-slate-300">Submit</button>
+          class="font-semibold bg-slate-600 text-slate-200 text-2xl py-2 px-4 rounded hover:bg-slate-300 hover:text-slate-800 transition-colors disabled:bg-slate-800 disabled:text-slate-300">Submit</button>
       </div>
     </div>
     <div class="mt-3 md:w-full w-[90%] flex justify-center">
@@ -105,9 +106,9 @@ const deleteNumber = () => {
 
 <style scoped>
 .verification-code-square {
-  width: 40px;
+  width: 60px;
   /* Set the width to the desired size for a square input */
-  height: 40px;
+  height: 60px;
   /* Set the height to match the width for a square input */
   text-align: center;
   /* Center the text inside the input */
