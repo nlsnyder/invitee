@@ -113,7 +113,7 @@ h6 {
   }
 
   .modal {
-    @apply text-center absolute w-[350px] left-1/2 -translate-x-1/2 md:w-[400px] lg:w-[450px] top-[10%] lg:top-[5%] border border-solid rounded bg-white text-base z-[999] flex flex-col shadow-lg;
+    @apply text-center absolute w-[95vw] left-1/2 -translate-x-1/2 md:w-[400px] lg:w-[450px] top-[10%] lg:top-[5%] border border-solid rounded bg-white text-base z-[999] flex flex-col shadow-lg;
   }
 
   .modal-header {
@@ -121,7 +121,7 @@ h6 {
   }
 
   .modal-body {
-    @apply flex-auto p-8 h-[400px] lg:h-[450px] overflow-y-scroll;
+    @apply flex-auto p-4 h-[60vh] md:h-[400px] overflow-y-scroll;
   }
 
   .modal-footer {

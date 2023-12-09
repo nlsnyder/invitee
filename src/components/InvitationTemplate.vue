@@ -10,12 +10,24 @@
     </div>
     <div class="flex flex-col">
       <span class="font-bold not-italic">Event: </span>
-      <span>Start off the night with dinner. <br /> Possible options include:</span>
+      <span>Start off the night with dinner. <br /> Possible options include but are not limited to:</span>
       <div class="dinner-option-container">
         <p class="italic text-left">The Statehouse</p>
         <img src="/statehouse-img-1.jpeg" alt="Fine dining pasta dish" class="rounded dinner-picture" />
         <img src="/statehouse-img-2.webp" alt="Fine dining fish dish" class="rounded dinner-picture" />
         <img src="/statehouse-img-3.jpeg" alt="Statehouse restaurant" class="rounded dinner-picture" />
+      </div>
+      <div class="dinner-option-container">
+        <p class="italic text-left">Cento</p>
+        <img src="/cento-img-1.jpeg" alt="Cento pasta dish" class="rounded dinner-picture" />
+        <img src="/cento-img-2.jpeg" alt="Cento pizza dish" class="rounded dinner-picture" />
+        <img src="/cento-img-3.jpeg" alt="Cento restaurant" class="rounded dinner-picture" />
+      </div>
+      <div class="dinner-option-container">
+        <p class="italic text-left">The Old Fashioned</p>
+        <img src="/old-fashioned-img-1.webp" alt="Old fashioned brat" class="rounded dinner-picture" />
+        <img src="/old-fashioned-img-2.jpeg" alt="Old fashioned cheese curds" class="rounded dinner-picture" />
+        <img src="/old-fashioned-img-3.jpeg" alt="Old fashioned restaurant" class="rounded dinner-picture" />
       </div>
       <div class="ice-skating-description">
         <p class="mb-4">End the night ice skating at the Edgewater.</p>
