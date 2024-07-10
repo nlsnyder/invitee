@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen text-white flex items-center justify-center flex-col">
-    <h3 class="text-slate-300 mb-3">Enter Code</h3>
+  <div class="bg-slate-800 text-white flex items-center justify-center flex-col">
+    <h3 class="text-slate-300 my-3">Enter Code</h3>
     <div class="mb-8">
       <input v-for="i in 4" class="verification-code-square text-slate-900 text-2xl" :key="i" v-model="keyCode[i - 1]"
         @input="onCodeInput(i - 1)" @keydown="onInputKeyDown(i - 1, $event)" maxlength="1" />
