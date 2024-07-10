@@ -11,7 +11,7 @@
           <span class="detail-tag">Date:</span>
           <div class="date-card">
             <font-awesome-icon :icon="['far', 'calendar']" />
-            <span>8-17-2024</span>
+            <span>8-14-2024</span>
           </div>
         </div>
         <div class="info-section">
