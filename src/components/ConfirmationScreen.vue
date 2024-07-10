@@ -11,20 +11,20 @@
           <span class="detail-tag">Date:</span>
           <div class="date-card">
             <font-awesome-icon :icon="['far', 'calendar']" />
-            <span>12-14-2023</span>
+            <span>8-17-2024</span>
           </div>
         </div>
         <div class="info-section">
           <span class="detail-tag">Time:</span>
           <div class="time-card">
             <font-awesome-icon :icon="['far', 'clock']" />
-            <span>6PM</span>
+            <span>7PM</span>
           </div>
         </div>
         <div class="info-section">
           <span class="detail-tag">Details:</span>
           <p class="italic text-base">
-            Dinner and ice skating
+            Brewers game
           </p>
         </div>
       </div>

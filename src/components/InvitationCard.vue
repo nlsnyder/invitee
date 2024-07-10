@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-100 h-screen w-screen flex items-center justify-center background-image">
+  <div class="bg-slate-700 h-screen w-screen flex items-center justify-center background-image">
     <Transition appear name="open" mode="out-in">
       <div class="envelope" v-if="!state.envelopeOpened && !state.acceptClicked && !state.declineClicked">
         <img class="text-slate-100" src="/message-closed-envelope.png" alt="Closed invitation" />
@@ -7,11 +7,11 @@
           class="open-envelope bg-slate-200 shadow-lg text-slate-900 hover:bg-slate-900 hover:text-slate-100 transition-colors border-2 border-slate-900"
           @click="openEnvelope">Open</button>
       </div>
-      <div v-else-if="state.acceptClicked" class="w-4/5 md:w-2/5 lg:w-1/3 -translate-y-20">
+      <div v-else-if="state.acceptClicked" class="w-4/5 md:w-2/5 lg:w-1/3 -translate-y-8">
         <ConfirmationScreen />
       </div>
       <div v-else-if="state.declineClicked" class="decline-invitation">
-        <h1 class="text-center">You weren't supposed to click that :(</h1>
+        <h1 class="text-center text-slate-300">You weren't supposed to click that :(</h1>
       </div>
     </Transition>
   </div>
@@ -98,11 +98,5 @@ const declineInvitation = () => {
   padding: 25px 30px;
   border-radius: 50%;
   font-weight: 700;
-}
-
-.background-image {
-  background: url('/christmas-bg-image.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 </style>
